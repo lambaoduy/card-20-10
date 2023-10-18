@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chào Mừng Ngày Phụ Nữ Việt Nam 20/11</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="assets/Icon/themify-icons-font/themify-icons/themify-icons.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="product-img">
+            <img src="./assets/img/ngayphunuvietnam.png" alt="" height="420" width="327">
+        </div>
+        <div class="product-info">
+            <div class="product-text">
+                <h1>Chào Mừng Ngày Phụ Nữ Việt Nam</h1>
+                <p>Nhân ngày phụ nữ Việt Nam ta
+                    <br>
+                    Gửi mấy vần thơ gọi chút quà
+                    <br>
+                    Chúc chị môi hồng xinh đẹp nhé
+                    <br>
+                    Mừng em má đỏ dễ thương nha <br>
+                    Tình yêu thắm thiết hoài đơm nụ <br>
+                    Hạnh phúc đong đầy vẫn nở hoa <br>
+                    <!-- Sự nghiệp công danh đều đủ cả <br>
+Vui tươi cứ trẻ mãi không già <br> -->
+                </p>
+            </div>
+
+            <div class="product-btn">
+                <!-- <p><span>Vô Giá</span></p> -->
+                <button class="js-show-message" type="button">
+                    Tặng Quà
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <H2 >Hết tiền mua quà r nên năm sau đi</H2>
+        </div>
+    </div>
+
+    <script>
+        const giftbtn = document.querySelector(".js-show-message");
+        const modal = document.querySelector('.js-modal');
+        const modalContainer = document.querySelector('.js-modal-container');
+        const exitBtn = document.querySelector('.js-modal-close');
+        function showMessage(){
+            modal.classList.add('open');
+        }
+
+        function closeBuyTicket() {
+            modal.classList.remove('open');
+        }
+
+        
+         giftbtn.addEventListener('click', showMessage)
+        
+        exitBtn.addEventListener('click', closeBuyTicket);
+        giftbtn.addEventListener('click',showMessage)
+
+        modal.addEventListener('click', closeBuyTicket);
+
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation();
+        })
+
+
+    </script>
+</body>
+
+</html
