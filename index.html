@@ -35,7 +35,7 @@ Vui tươi cứ trẻ mãi không già <br> -->
             <div class="product-btn">
                 <!-- <p><span>Vô Giá</span></p> -->
                 <button class="js-show-message" type="button">
-                    Tặng Quà
+                    Quà
                 </button>
             </div>
         </div>
@@ -43,10 +43,16 @@ Vui tươi cứ trẻ mãi không già <br> -->
 
     <div class="modal js-modal">
         <div class="modal-container js-modal-container">
+
             <div class="modal-close js-modal-close">
                 <i class="ti-close"></i>
             </div>
-            <H2 >Hết tiền mua quà r nên năm sau đi</H2>
+           
+            <H2 class="content"> Hôm nay là một ngày thật ý nghĩa. 
+                <br> Hãy gác lại mọi công việc 
+                <br>và tận hưởng nó nhé bạn của tôi. 
+                <br>Chúc bạn có một ngày 20/10 
+                <br>tràn ngập niềm vui và hạnh phúc.</H2>
         </div>
     </div>
 
@@ -55,7 +61,7 @@ Vui tươi cứ trẻ mãi không già <br> -->
         const modal = document.querySelector('.js-modal');
         const modalContainer = document.querySelector('.js-modal-container');
         const exitBtn = document.querySelector('.js-modal-close');
-        function showMessage(){
+        function showMessage() {
             modal.classList.add('open');
         }
 
@@ -63,11 +69,11 @@ Vui tươi cứ trẻ mãi không già <br> -->
             modal.classList.remove('open');
         }
 
-        
-         giftbtn.addEventListener('click', showMessage)
-        
+
+        giftbtn.addEventListener('click', showMessage)
+
         exitBtn.addEventListener('click', closeBuyTicket);
-        giftbtn.addEventListener('click',showMessage)
+        giftbtn.addEventListener('click', showMessage)
 
         modal.addEventListener('click', closeBuyTicket);
 
