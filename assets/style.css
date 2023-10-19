@@ -157,9 +157,9 @@ span {
 }
 
 .modal-close:hover {
-    background-color: #cccccc51;
-    color: #000;
-    cursor: pointer;
+    background-color:red;
+    color: #fff;
+   cursor: pointer;
 }
 
 .modal-close {
@@ -167,10 +167,10 @@ span {
     right: 0;
     top: 0;
     padding: 16px;
-    color: #fff;
-    background-color: #ff0000d0;
+    background-color: #cccccc51;
+    color: #000;
+  
 }
-
 .modal-header {
     width: 100%;
     min-height: 129px;
